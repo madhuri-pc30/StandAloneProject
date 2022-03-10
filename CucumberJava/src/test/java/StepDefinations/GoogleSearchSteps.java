@@ -15,7 +15,8 @@ import io.cucumber.java.en.When;
 
 public class GoogleSearchSteps {
 	 
-	WebDriver driver =null;
+	
+	WebDriver driver= new ChromeDriver();
 
 
     @Given("^browser is open$")

@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.Cucumber;
 
 	@RunWith(Cucumber.class)
-	@CucumberOptions(features="src/test/resources/Features",glue= {"StepDefinations", "MyHooks"}, 
+	@CucumberOptions(features="src/test/resources/Features/login.feature",glue= {"classpath:StepDefinations.LoginSteps"}, 
 	monochrome=true,
 	plugin ={"pretty",
 			"junit:target/MyReports/report.xml",
